@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:text="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bwie.com.mytextview.MainActivity">
+
+
+    <bwie.com.mytextview.Mytextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        text:text="测试"
+        text:textcolor="#000000"
+        text:textsize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+    <bwie.com.mytextview.MyEditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:hint="请输入"
+        android:textSize="25sp"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:layout_gravity="center"
+            android:id="@+id/lv"></ListView>
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="#606060"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+        <bwie.com.mytextview.ABCDEFG_____
+            android:id="@+id/abc"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"/>
+    </FrameLayout>
+</LinearLayout>
